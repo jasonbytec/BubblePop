@@ -16,7 +16,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSDictionary *appDefaults = @{@"time": @"60", @"bubbles": @"15"};
+    [defaults registerDefaults:appDefaults];
+    [defaults synchronize];
     return YES;
 }
 

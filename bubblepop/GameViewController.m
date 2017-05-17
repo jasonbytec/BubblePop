@@ -23,6 +23,7 @@
     self.screenWidth = gameRect.size.width;
     self.screenHeight = gameRect.size.height;
 
+    self.score = @0;
     [self setHighScore];
 
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];

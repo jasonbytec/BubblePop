@@ -40,9 +40,15 @@
                                 <rect key="frame" x="170" y="318" width="34" height="30"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
-                                    <segue destination="S0v-9h-XQ6" kind="show" animates="NO" id="zbM-eb-pjp"/>
+                                    <action selector="handleButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K77-wF-jfi"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bubble Pop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYH-nd-ipA">
+                                <rect key="frame" x="57" y="50" width="261.5" height="62.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -50,17 +56,52 @@
                             <constraint firstItem="5oV-Ou-Gyp" firstAttribute="top" secondItem="pvK-jt-hzQ" secondAttribute="bottom" constant="18" id="58J-Da-JVC"/>
                             <constraint firstItem="Sa2-Bv-fX3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CEn-6d-KPQ"/>
                             <constraint firstItem="Sa2-Bv-fX3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ky4-Mc-fb6"/>
+                            <constraint firstItem="BYH-nd-ipA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="UkC-Gg-mr7"/>
                             <constraint firstItem="pvK-jt-hzQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gNC-G5-00X"/>
                             <constraint firstItem="5oV-Ou-Gyp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jnV-hJ-Gww"/>
+                            <constraint firstItem="BYH-nd-ipA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k3j-cv-gKG"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnStart" destination="Sa2-Bv-fX3" id="fHM-j8-lik"/>
                         <outlet property="txtName" destination="5oV-Ou-Gyp" id="5Pr-dJ-kOi"/>
+                        <segue destination="1HT-YL-23Y" kind="show" identifier="countdownSegue" animates="NO" id="sEN-kp-s4A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="311" y="166"/>
+            <point key="canvasLocation" x="-346" y="166"/>
+        </scene>
+        <!--Countdown View Controller-->
+        <scene sceneID="9ya-I1-Las">
+            <objects>
+                <viewController id="1HT-YL-23Y" customClass="CountdownViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hRG-GY-F6Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="8EW-HF-8kn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6FS-x2-rKf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4c-Ne-nYR">
+                                <rect key="frame" x="164" y="289" width="46" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblNumber" destination="l4c-Ne-nYR" id="mUc-AY-2qb"/>
+                        <segue destination="S0v-9h-XQ6" kind="show" identifier="startSegue" animates="NO" id="Eyx-VM-uyy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7vA-uA-JUV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="416.80000000000001" y="166.8665667166417"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="y60-By-wmr">
@@ -134,7 +175,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lnh-Vw-Lu6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1170" y="166"/>
+            <point key="canvasLocation" x="1238" y="166"/>
         </scene>
         <!--Score View Controller-->
         <scene sceneID="Hyz-7T-cUD">
@@ -206,7 +247,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YDB-qe-BKE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2015" y="166"/>
+            <point key="canvasLocation" x="2506" y="166"/>
         </scene>
     </scenes>
 </document>

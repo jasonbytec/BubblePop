@@ -11,6 +11,10 @@
 @interface MainViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UITextField *txtName;
+@property (weak, nonatomic) IBOutlet UIButton *btnStart;
+
+- (IBAction)handleButtonClick:(id)sender;
+
 
 @end
 

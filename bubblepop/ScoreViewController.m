@@ -8,6 +8,7 @@
 
 #import "ScoreViewController.h"
 #import "AppDelegate.h"
+#import "Score.h"
 
 @interface ScoreViewController ()
 
@@ -19,7 +20,20 @@
     [super viewDidLoad];
     NSManagedObjectContext *managedObjectContext = [self managedObjectContext];
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Scores"];
-    self.scores = [[managedObjectContext executeFetchRequest:fetchRequest error:nil] copy];
+    NSArray *scoreObjects = [[managedObjectContext executeFetchRequest:fetchRequest error:nil] copy];
+
+    NSMutableArray *tempScores = [[NSMutableArray alloc] init];
+
+    for(NSManagedObject *scoreObject in scoreObjects) {
+        Score *score = [[Score alloc] init];
+        score.player = [NSString stringWithFormat:@"%@", [scoreObject valueForKey:@"player"]];
+        score.value = [[NSString stringWithFormat:@"%@", [scoreObject valueForKey:@"score"]] intValue];
+
+        [tempScores addObject:score];
+    }
+
+    NSSortDescriptor *scoreDescriptor = [[NSSortDescriptor alloc] initWithKey:@"value" ascending:NO];
+    self.scores = [tempScores sortedArrayUsingDescriptors:@[scoreDescriptor]];
 
 }
 
@@ -35,9 +49,9 @@
     static NSString *cellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
 
-    NSManagedObject *score = self.scores[(NSUInteger) indexPath.row];
-    cell.textLabel.text = [NSString stringWithFormat:@"%@", [score valueForKey:@"player"]];
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", [score valueForKey:@"score"]];
+    Score *score = self.scores[(NSUInteger) indexPath.row];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@", score.player];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%i", score.value];
     return cell;
 }
 

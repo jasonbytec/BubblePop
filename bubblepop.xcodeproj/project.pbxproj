@@ -10,6 +10,8 @@
 		47BEDAB047F99540F3F60721 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BED0318A2A3BAF82CD70C5 /* Constants.m */; };
 		781C9CFF1ECC3EA80090F52C /* ScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 781C9CFE1ECC3EA80090F52C /* ScoreViewController.m */; };
 		781C9D031ECC552E0090F52C /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 781C9D021ECC552E0090F52C /* Settings.bundle */; };
+		781C9D061ECC61730090F52C /* CountdownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 781C9D051ECC61730090F52C /* CountdownViewController.m */; };
+		B2A04FC69FCC3FC0575E12C8 /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A042D15D8372298283719B /* Score.m */; };
 		EE7B3E501EC1779C005652B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7B3E4F1EC1779C005652B1 /* main.m */; };
 		EE7B3E531EC1779C005652B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7B3E521EC1779C005652B1 /* AppDelegate.m */; };
 		EE7B3E561EC1779C005652B1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7B3E551EC1779C005652B1 /* MainViewController.m */; };
@@ -33,6 +35,10 @@
 		781C9CFD1ECC3EA80090F52C /* ScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreViewController.h; sourceTree = "<group>"; };
 		781C9CFE1ECC3EA80090F52C /* ScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreViewController.m; sourceTree = "<group>"; };
 		781C9D021ECC552E0090F52C /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		781C9D041ECC61730090F52C /* CountdownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountdownViewController.h; sourceTree = "<group>"; };
+		781C9D051ECC61730090F52C /* CountdownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountdownViewController.m; sourceTree = "<group>"; };
+		B2A042D15D8372298283719B /* Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Score.m; sourceTree = "<group>"; };
+		B2A04CAAE9A61A03FD770BFD /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
 		EE7B3E4B1EC1779C005652B1 /* bubblepop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bubblepop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE7B3E4F1EC1779C005652B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EE7B3E511EC1779C005652B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -110,6 +116,8 @@
 				47BED2728A3F67323024BFEE /* Constants.h */,
 				781C9CFD1ECC3EA80090F52C /* ScoreViewController.h */,
 				781C9CFE1ECC3EA80090F52C /* ScoreViewController.m */,
+				781C9D041ECC61730090F52C /* CountdownViewController.h */,
+				781C9D051ECC61730090F52C /* CountdownViewController.m */,
 			);
 			path = bubblepop;
 			sourceTree = "<group>";
@@ -139,6 +147,8 @@
 				EE7B3E7E1EC1A27B005652B1 /* BlackBubble.m */,
 				EE7B3E821EC1AE6D005652B1 /* Position.h */,
 				EE7B3E831EC1AE6D005652B1 /* Position.m */,
+				B2A042D15D8372298283719B /* Score.m */,
+				B2A04CAAE9A61A03FD770BFD /* Score.h */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -222,6 +232,7 @@
 				EE7B3E561EC1779C005652B1 /* MainViewController.m in Sources */,
 				EE7B3E7C1EC1A257005652B1 /* BlueBubble.m in Sources */,
 				EE7B3E5C1EC1779C005652B1 /* bubblepop.xcdatamodeld in Sources */,
+				781C9D061ECC61730090F52C /* CountdownViewController.m in Sources */,
 				EE7B3E701EC19763005652B1 /* Bubble.m in Sources */,
 				EE7B3E731EC19992005652B1 /* RedBubble.m in Sources */,
 				EE7B3E761EC1A1E8005652B1 /* PinkBubble.m in Sources */,
@@ -229,6 +240,7 @@
 				EE7B3E501EC1779C005652B1 /* main.m in Sources */,
 				EE7B3E7F1EC1A27B005652B1 /* BlackBubble.m in Sources */,
 				47BEDAB047F99540F3F60721 /* Constants.m in Sources */,
+				B2A04FC69FCC3FC0575E12C8 /* Score.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
