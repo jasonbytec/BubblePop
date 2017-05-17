@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		47BEDAB047F99540F3F60721 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BED0318A2A3BAF82CD70C5 /* Constants.m */; };
+		781C9CFF1ECC3EA80090F52C /* ScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 781C9CFE1ECC3EA80090F52C /* ScoreViewController.m */; };
+		781C9D031ECC552E0090F52C /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 781C9D021ECC552E0090F52C /* Settings.bundle */; };
+		EE7B3E501EC1779C005652B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7B3E4F1EC1779C005652B1 /* main.m */; };
+		EE7B3E531EC1779C005652B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7B3E521EC1779C005652B1 /* AppDelegate.m */; };
+		EE7B3E561EC1779C005652B1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7B3E551EC1779C005652B1 /* MainViewController.m */; };
+		EE7B3E591EC1779C005652B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE7B3E571EC1779C005652B1 /* Main.storyboard */; };
+		EE7B3E5C1EC1779C005652B1 /* bubblepop.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE7B3E5A1EC1779C005652B1 /* bubblepop.xcdatamodeld */; };
+		EE7B3E5E1EC1779C005652B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE7B3E5D1EC1779C005652B1 /* Assets.xcassets */; };
+		EE7B3E611EC1779C005652B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE7B3E5F1EC1779C005652B1 /* LaunchScreen.storyboard */; };
+		EE7B3E6D1EC18ADC005652B1 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7B3E6C1EC18ADC005652B1 /* GameViewController.m */; };
+		EE7B3E701EC19763005652B1 /* Bubble.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7B3E6F1EC19763005652B1 /* Bubble.m */; };
+		EE7B3E731EC19992005652B1 /* RedBubble.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7B3E721EC19992005652B1 /* RedBubble.m */; };
+		EE7B3E761EC1A1E8005652B1 /* PinkBubble.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7B3E751EC1A1E8005652B1 /* PinkBubble.m */; };
+		EE7B3E791EC1A231005652B1 /* GreenBubble.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7B3E781EC1A231005652B1 /* GreenBubble.m */; };
+		EE7B3E7C1EC1A257005652B1 /* BlueBubble.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7B3E7B1EC1A257005652B1 /* BlueBubble.m */; };
+		EE7B3E7F1EC1A27B005652B1 /* BlackBubble.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7B3E7E1EC1A27B005652B1 /* BlackBubble.m */; };
+		EE7B3E841EC1AE6D005652B1 /* Position.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7B3E831EC1AE6D005652B1 /* Position.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		47BED0318A2A3BAF82CD70C5 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		47BED2728A3F67323024BFEE /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		781C9CFD1ECC3EA80090F52C /* ScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreViewController.h; sourceTree = "<group>"; };
+		781C9CFE1ECC3EA80090F52C /* ScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreViewController.m; sourceTree = "<group>"; };
+		781C9D021ECC552E0090F52C /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		EE7B3E4B1EC1779C005652B1 /* bubblepop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bubblepop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE7B3E4F1EC1779C005652B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EE7B3E511EC1779C005652B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EE7B3E521EC1779C005652B1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EE7B3E541EC1779C005652B1 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		EE7B3E551EC1779C005652B1 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		EE7B3E581EC1779C005652B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE7B3E5B1EC1779C005652B1 /* bubblepop.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = bubblepop.xcdatamodel; sourceTree = "<group>"; };
+		EE7B3E5D1EC1779C005652B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE7B3E601EC1779C005652B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE7B3E621EC1779C005652B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE7B3E6B1EC18ADC005652B1 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		EE7B3E6C1EC18ADC005652B1 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		EE7B3E6E1EC19763005652B1 /* Bubble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bubble.h; sourceTree = "<group>"; };
+		EE7B3E6F1EC19763005652B1 /* Bubble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bubble.m; sourceTree = "<group>"; };
+		EE7B3E711EC19992005652B1 /* RedBubble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedBubble.h; sourceTree = "<group>"; };
+		EE7B3E721EC19992005652B1 /* RedBubble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedBubble.m; sourceTree = "<group>"; };
+		EE7B3E741EC1A1E8005652B1 /* PinkBubble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinkBubble.h; sourceTree = "<group>"; };
+		EE7B3E751EC1A1E8005652B1 /* PinkBubble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinkBubble.m; sourceTree = "<group>"; };
+		EE7B3E771EC1A231005652B1 /* GreenBubble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreenBubble.h; sourceTree = "<group>"; };
+		EE7B3E781EC1A231005652B1 /* GreenBubble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GreenBubble.m; sourceTree = "<group>"; };
+		EE7B3E7A1EC1A257005652B1 /* BlueBubble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueBubble.h; sourceTree = "<group>"; };
+		EE7B3E7B1EC1A257005652B1 /* BlueBubble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueBubble.m; sourceTree = "<group>"; };
+		EE7B3E7D1EC1A27B005652B1 /* BlackBubble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlackBubble.h; sourceTree = "<group>"; };
+		EE7B3E7E1EC1A27B005652B1 /* BlackBubble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlackBubble.m; sourceTree = "<group>"; };
+		EE7B3E821EC1AE6D005652B1 /* Position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Position.h; sourceTree = "<group>"; };
+		EE7B3E831EC1AE6D005652B1 /* Position.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Position.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE7B3E481EC1779C005652B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE7B3E421EC1779C005652B1 = {
+			isa = PBXGroup;
+			children = (
+				781C9D021ECC552E0090F52C /* Settings.bundle */,
+				EE7B3E4D1EC1779C005652B1 /* bubblepop */,
+				EE7B3E4C1EC1779C005652B1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE7B3E4C1EC1779C005652B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE7B3E4B1EC1779C005652B1 /* bubblepop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE7B3E4D1EC1779C005652B1 /* bubblepop */ = {
+			isa = PBXGroup;
+			children = (
+				EE7B3E511EC1779C005652B1 /* AppDelegate.h */,
+				EE7B3E521EC1779C005652B1 /* AppDelegate.m */,
+				EE7B3E541EC1779C005652B1 /* MainViewController.h */,
+				EE7B3E551EC1779C005652B1 /* MainViewController.m */,
+				EE7B3E571EC1779C005652B1 /* Main.storyboard */,
+				EE7B3E5D1EC1779C005652B1 /* Assets.xcassets */,
+				EE7B3E5F1EC1779C005652B1 /* LaunchScreen.storyboard */,
+				EE7B3E621EC1779C005652B1 /* Info.plist */,
+				EE7B3E5A1EC1779C005652B1 /* bubblepop.xcdatamodeld */,
+				EE7B3E4E1EC1779C005652B1 /* Supporting Files */,
+				EE7B3E6B1EC18ADC005652B1 /* GameViewController.h */,
+				EE7B3E6C1EC18ADC005652B1 /* GameViewController.m */,
+				EE7B3E811EC1A3E6005652B1 /* model */,
+				47BED0318A2A3BAF82CD70C5 /* Constants.m */,
+				47BED2728A3F67323024BFEE /* Constants.h */,
+				781C9CFD1ECC3EA80090F52C /* ScoreViewController.h */,
+				781C9CFE1ECC3EA80090F52C /* ScoreViewController.m */,
+			);
+			path = bubblepop;
+			sourceTree = "<group>";
+		};
+		EE7B3E4E1EC1779C005652B1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE7B3E4F1EC1779C005652B1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE7B3E811EC1A3E6005652B1 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				EE7B3E6E1EC19763005652B1 /* Bubble.h */,
+				EE7B3E6F1EC19763005652B1 /* Bubble.m */,
+				EE7B3E711EC19992005652B1 /* RedBubble.h */,
+				EE7B3E721EC19992005652B1 /* RedBubble.m */,
+				EE7B3E741EC1A1E8005652B1 /* PinkBubble.h */,
+				EE7B3E751EC1A1E8005652B1 /* PinkBubble.m */,
+				EE7B3E771EC1A231005652B1 /* GreenBubble.h */,
+				EE7B3E781EC1A231005652B1 /* GreenBubble.m */,
+				EE7B3E7A1EC1A257005652B1 /* BlueBubble.h */,
+				EE7B3E7B1EC1A257005652B1 /* BlueBubble.m */,
+				EE7B3E7D1EC1A27B005652B1 /* BlackBubble.h */,
+				EE7B3E7E1EC1A27B005652B1 /* BlackBubble.m */,
+				EE7B3E821EC1AE6D005652B1 /* Position.h */,
+				EE7B3E831EC1AE6D005652B1 /* Position.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE7B3E4A1EC1779C005652B1 /* bubblepop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE7B3E651EC1779C005652B1 /* Build configuration list for PBXNativeTarget "bubblepop" */;
+			buildPhases = (
+				EE7B3E471EC1779C005652B1 /* Sources */,
+				EE7B3E481EC1779C005652B1 /* Frameworks */,
+				EE7B3E491EC1779C005652B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = bubblepop;
+			productName = bubblepop;
+			productReference = EE7B3E4B1EC1779C005652B1 /* bubblepop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE7B3E431EC1779C005652B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Jason King";
+				TargetAttributes = {
+					EE7B3E4A1EC1779C005652B1 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EE7B3E461EC1779C005652B1 /* Build configuration list for PBXProject "bubblepop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE7B3E421EC1779C005652B1;
+			productRefGroup = EE7B3E4C1EC1779C005652B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE7B3E4A1EC1779C005652B1 /* bubblepop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE7B3E491EC1779C005652B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				781C9D031ECC552E0090F52C /* Settings.bundle in Resources */,
+				EE7B3E611EC1779C005652B1 /* LaunchScreen.storyboard in Resources */,
+				EE7B3E5E1EC1779C005652B1 /* Assets.xcassets in Resources */,
+				EE7B3E591EC1779C005652B1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE7B3E471EC1779C005652B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE7B3E841EC1AE6D005652B1 /* Position.m in Sources */,
+				781C9CFF1ECC3EA80090F52C /* ScoreViewController.m in Sources */,
+				EE7B3E6D1EC18ADC005652B1 /* GameViewController.m in Sources */,
+				EE7B3E791EC1A231005652B1 /* GreenBubble.m in Sources */,
+				EE7B3E561EC1779C005652B1 /* MainViewController.m in Sources */,
+				EE7B3E7C1EC1A257005652B1 /* BlueBubble.m in Sources */,
+				EE7B3E5C1EC1779C005652B1 /* bubblepop.xcdatamodeld in Sources */,
+				EE7B3E701EC19763005652B1 /* Bubble.m in Sources */,
+				EE7B3E731EC19992005652B1 /* RedBubble.m in Sources */,
+				EE7B3E761EC1A1E8005652B1 /* PinkBubble.m in Sources */,
+				EE7B3E531EC1779C005652B1 /* AppDelegate.m in Sources */,
+				EE7B3E501EC1779C005652B1 /* main.m in Sources */,
+				EE7B3E7F1EC1A27B005652B1 /* BlackBubble.m in Sources */,
+				47BEDAB047F99540F3F60721 /* Constants.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EE7B3E571EC1779C005652B1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE7B3E581EC1779C005652B1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE7B3E5F1EC1779C005652B1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE7B3E601EC1779C005652B1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE7B3E631EC1779C005652B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE7B3E641EC1779C005652B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE7B3E661EC1779C005652B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = bubblepop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.bytec.bubblepop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EE7B3E671EC1779C005652B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = bubblepop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.bytec.bubblepop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE7B3E461EC1779C005652B1 /* Build configuration list for PBXProject "bubblepop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE7B3E631EC1779C005652B1 /* Debug */,
+				EE7B3E641EC1779C005652B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE7B3E651EC1779C005652B1 /* Build configuration list for PBXNativeTarget "bubblepop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE7B3E661EC1779C005652B1 /* Debug */,
+				EE7B3E671EC1779C005652B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EE7B3E5A1EC1779C005652B1 /* bubblepop.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EE7B3E5B1EC1779C005652B1 /* bubblepop.xcdatamodel */,
+			);
+			currentVersion = EE7B3E5B1EC1779C005652B1 /* bubblepop.xcdatamodel */;
+			path = bubblepop.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EE7B3E431EC1779C005652B1 /* Project object */;
+}
