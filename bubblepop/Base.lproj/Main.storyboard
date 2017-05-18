@@ -84,15 +84,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4c-Ne-nYR">
-                                <rect key="frame" x="164" y="289" width="46" height="89"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4c-Ne-nYR">
+                                <rect key="frame" x="165.5" y="290.5" width="43" height="86"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="72"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="l4c-Ne-nYR" firstAttribute="centerX" secondItem="6FS-x2-rKf" secondAttribute="centerX" id="3tg-yO-J8Q"/>
+                            <constraint firstItem="l4c-Ne-nYR" firstAttribute="centerY" secondItem="6FS-x2-rKf" secondAttribute="centerY" id="FkE-BN-Bnk"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="lblNumber" destination="l4c-Ne-nYR" id="mUc-AY-2qb"/>
@@ -154,15 +157,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="uVV-17-QBP" firstAttribute="top" secondItem="m9z-TJ-dLW" secondAttribute="bottom" id="4WO-ns-pDZ"/>
                             <constraint firstItem="m9z-TJ-dLW" firstAttribute="leading" secondItem="oFh-Jm-9uU" secondAttribute="leading" id="BYx-r3-Oug"/>
+                            <constraint firstItem="9Aq-RF-jDs" firstAttribute="top" secondItem="uVV-17-QBP" secondAttribute="bottom" id="LXV-ZI-kBS"/>
                             <constraint firstItem="m9z-TJ-dLW" firstAttribute="centerX" secondItem="oFh-Jm-9uU" secondAttribute="centerX" id="Mj4-I9-QAl"/>
-                            <constraint firstItem="uVV-17-QBP" firstAttribute="leading" secondItem="oFh-Jm-9uU" secondAttribute="leading" id="VRn-M9-Oud"/>
-                            <constraint firstItem="9Aq-RF-jDs" firstAttribute="top" secondItem="uVV-17-QBP" secondAttribute="bottom" id="X2T-oC-Rca"/>
+                            <constraint firstItem="uVV-17-QBP" firstAttribute="leading" secondItem="oFh-Jm-9uU" secondAttribute="leading" id="R0S-0C-F55"/>
                             <constraint firstItem="uVV-17-QBP" firstAttribute="centerX" secondItem="oFh-Jm-9uU" secondAttribute="centerX" id="XrU-W1-lRo"/>
+                            <constraint firstAttribute="trailing" secondItem="uVV-17-QBP" secondAttribute="trailing" id="h9j-Xh-klg"/>
+                            <constraint firstItem="uVV-17-QBP" firstAttribute="top" secondItem="m9z-TJ-dLW" secondAttribute="bottom" id="nCh-Lk-auW"/>
                             <constraint firstAttribute="trailing" secondItem="m9z-TJ-dLW" secondAttribute="trailing" id="oKB-w1-b0Z"/>
                             <constraint firstItem="m9z-TJ-dLW" firstAttribute="top" secondItem="E9G-fz-05d" secondAttribute="bottom" id="orM-Kk-ww3"/>
-                            <constraint firstAttribute="trailing" secondItem="uVV-17-QBP" secondAttribute="trailing" id="smn-UG-uMu"/>
                         </constraints>
                     </view>
                     <connections>

@@ -19,9 +19,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    CGRect gameRect = self.gameView.bounds;
-    self.screenWidth = gameRect.size.width;
-    self.screenHeight = gameRect.size.height;
 
     self.score = @0;
     [self setHighScore];
@@ -36,6 +33,17 @@
                                                     userInfo:nil repeats:YES];
 
     [self.gameTimer fire];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self setDimensions];
+}
+
+- (void)setDimensions {
+    CGRect gameRect = self.gameView.bounds;
+    self.screenWidth = gameRect.size.width;
+    self.screenHeight = gameRect.size.height;
 }
 
 - (void)setHighScore {
@@ -61,7 +69,7 @@
         return;
     }
 
-    self.lblTime.text = [NSString stringWithFormat:@"Time Left\n%d", self.timeRemaining];
+    self.lblTime.text = [NSString stringWithFormat:@"Time Left\n%ld", (long)self.timeRemaining];
     [self removeBubbles];
     [self createBubbles];
 
@@ -214,6 +222,13 @@
     return [[Position alloc] initWithX:x andY:y];
 }
 
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
+        [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
+
+        } completion:^(id<UIViewControllerTransitionCoordinatorContext> context){
+            [self setDimensions];
+        }];
+}
 
 - (Bubble*)getBubbleWithPosition:(Position*) position {
     int random = arc4random_uniform(100);
@@ -242,20 +257,5 @@
     NSPersistentContainer *container = [delegate persistentContainer];
     return [container viewContext];
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
- #pragma mark - Navigation
-
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
 
 @end

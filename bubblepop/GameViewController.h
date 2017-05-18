@@ -19,10 +19,10 @@
 @interface GameViewController : UIViewController
 
 @property int gameTime;
-@property int maxBubbles;
+@property NSInteger maxBubbles;
 @property CGFloat screenWidth;
 @property CGFloat screenHeight;
-@property int timeRemaining;
+@property NSInteger timeRemaining;
 @property NSTimer *gameTimer;
 @property NSNumber *score;
 @property Bubble *lastTapped;
@@ -34,6 +34,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblScore;
 @property (weak, nonatomic) IBOutlet UILabel *lblHigh;
 
+- (void)setDimensions;
 - (void)setHighScore;
 - (void)gameStep:(NSTimer*) timer;
 - (void)gameFinished;
