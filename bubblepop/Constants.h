@@ -9,6 +9,3 @@ static const int BUBBLE_RADIUS = 25;
 static const int BUBBLE_PADDING = 10;
 static const float ANIMATION_TIME = 0.3;
 
-@interface Constants : NSObject
-
-@end

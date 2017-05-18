@@ -14,7 +14,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnStart;
 
 - (IBAction)handleButtonClick:(id)sender;
-
+- (void)showAlert;
 
 @end
 

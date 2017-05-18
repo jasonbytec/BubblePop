@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		47BEDAB047F99540F3F60721 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BED0318A2A3BAF82CD70C5 /* Constants.m */; };
 		781C9CFF1ECC3EA80090F52C /* ScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 781C9CFE1ECC3EA80090F52C /* ScoreViewController.m */; };
 		781C9D031ECC552E0090F52C /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 781C9D021ECC552E0090F52C /* Settings.bundle */; };
 		781C9D061ECC61730090F52C /* CountdownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 781C9D051ECC61730090F52C /* CountdownViewController.m */; };
@@ -30,7 +29,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		47BED0318A2A3BAF82CD70C5 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		47BED2728A3F67323024BFEE /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		781C9CFD1ECC3EA80090F52C /* ScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreViewController.h; sourceTree = "<group>"; };
 		781C9CFE1ECC3EA80090F52C /* ScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreViewController.m; sourceTree = "<group>"; };
@@ -112,7 +110,6 @@
 				EE7B3E6B1EC18ADC005652B1 /* GameViewController.h */,
 				EE7B3E6C1EC18ADC005652B1 /* GameViewController.m */,
 				EE7B3E811EC1A3E6005652B1 /* model */,
-				47BED0318A2A3BAF82CD70C5 /* Constants.m */,
 				47BED2728A3F67323024BFEE /* Constants.h */,
 				781C9CFD1ECC3EA80090F52C /* ScoreViewController.h */,
 				781C9CFE1ECC3EA80090F52C /* ScoreViewController.m */,
@@ -239,7 +236,6 @@
 				EE7B3E531EC1779C005652B1 /* AppDelegate.m in Sources */,
 				EE7B3E501EC1779C005652B1 /* main.m in Sources */,
 				EE7B3E7F1EC1A27B005652B1 /* BlackBubble.m in Sources */,
-				47BEDAB047F99540F3F60721 /* Constants.m in Sources */,
 				B2A04FC69FCC3FC0575E12C8 /* Score.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

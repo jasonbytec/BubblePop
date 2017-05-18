@@ -81,7 +81,9 @@
     [self saveScore];
     [self performSegueWithIdentifier:@"finishSegue" sender:self];
 }
-
+/*
+ * Save score to core data
+ */
 - (void)saveScore {
     NSManagedObjectContext *context = [self managedObjectContext];
     NSManagedObject *score = [NSEntityDescription insertNewObjectForEntityForName:@"Scores" inManagedObjectContext:context];
@@ -96,7 +98,9 @@
         NSLog(@"Save Successful");
     }
 }
-
+/*
+ * Handles a bubble tap. Removes the bubble from the screen and updates the score
+ */
 - (void)bubbleTapped:(UIGestureRecognizer *)gesture {
     Bubble *bubble = (Bubble *) gesture.view;
 
@@ -128,7 +132,9 @@
             }];
 }
 
-
+/*
+ * Creates bubbles on the screen
+ */
 - (void)createBubbles {
     
     int bubblesToCreate = arc4random_uniform((uint32_t) (self.maxBubbles - [self getBubbles].count));
@@ -139,7 +145,7 @@
         [self.gameView addSubview:bubble];
 
         bubble.transform = CGAffineTransformScale(CGAffineTransformIdentity, 0, 0);
-        [UIView animateWithDuration:ANIMATION_TIME delay: 0 options: UIViewAnimationOptionCurveEaseOut
+        [UIView animateWithDuration:ANIMATION_TIME delay:0 options: UIViewAnimationOptionCurveEaseOut
                          animations:^{
                              bubble.transform = CGAffineTransformScale(self.gameView.transform, 1, 1);
                          } completion:nil];
@@ -151,6 +157,9 @@
     }
 }
 
+/*
+ * Removes a random number of bubbles
+ */
 - (void)removeBubbles {
     uint bubblesToRemove = arc4random_uniform((uint32_t) [self getBubbles].count);
     
@@ -169,6 +178,9 @@
     }
 }
 
+/*
+ * Tries to find a valid position for the bubble to land
+ */
 - (Position*)getValidPosition {
 
     BOOL foundPosition = NO;
@@ -177,6 +189,7 @@
     while(!foundPosition) {
         randomPosition = [self getRandomPosition];
 
+        // If there are no bubbles, the position is immediately valid
         if(bubbles.count == 0) {
             return randomPosition;
         }
@@ -196,7 +209,9 @@
     return randomPosition;
     
 }
-
+/*
+ * Loops through the subviews and gets the bubbles
+ */
 - (NSMutableArray *) getBubbles {
     NSMutableArray *bubbles = [[NSMutableArray alloc] init];
     for(UIView * v in self.gameView.subviews) {
@@ -208,6 +223,9 @@
     return bubbles;
 }
 
+/*
+ * Checks whether two bubbles intersect using their positions and the distance formula
+ */
 - (BOOL)circle:(Position *)p1 intersectsWith:(Position*)p2 {
     
     double distance = sqrt(pow((p2.x + BUBBLE_RADIUS) - (p1.x + BUBBLE_RADIUS), 2)
@@ -222,6 +240,9 @@
     return [[Position alloc] initWithX:x andY:y];
 }
 
+/*
+ * Handles rotations
+ */
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
         [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
 
@@ -230,9 +251,14 @@
         }];
 }
 
+/*
+ * Randomly selects a bubble color
+ */
 - (Bubble*)getBubbleWithPosition:(Position*) position {
+
+    //Gets a random number between 1 and a 100 and chooses the bubble colour based on it.
     int random = arc4random_uniform(100);
-    
+
     if(random < 40) {
         return [[RedBubble alloc] initWithPosition:position];
     }
@@ -252,6 +278,9 @@
     return [[BlackBubble alloc] initWithPosition:position];
 }
 
+/*
+ * Gets the core data context
+ */
 - (NSManagedObjectContext *)managedObjectContext {
     id delegate = [[UIApplication sharedApplication] delegate];
     NSPersistentContainer *container = [delegate persistentContainer];
